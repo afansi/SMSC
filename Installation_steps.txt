@@ -1,0 +1,47 @@
+install npm (apt-get)
+install graphicsmagick (apt-get)
+install acorn (using npm: npm install acorn)
+install bourbon-neat (using npm: npm install bourbon-neat)
+install eslint (using npm: npm install eslint@^3.0.0)
+install eslint (using npm: npm install eslint@^6 --save-dev)
+install eslint-plugin-react (using npm: npm install eslint-plugin-react@^6.6.0)
+install eslint-plugin-react (using npm: npm install eslint-plugin-react@^6.6.0 --save-dev)
+install eslint-plugin-jsx-a11y (using npm: npm install eslint-plugin-jsx-a11y@^2.2.3)
+install eslint (using npm: npm install eslint@^3.0.0 --save-dev)
+rebuild node-sass (using npm: npm rebuild node-sass)
+
+
+===========================
+
+to run a script from package.json using npm, just run the following command: npm run "scipt-name"
+
+===========================
+
+install maven (apt-get)
+set up le repo mirroir dans home}/.m2/setting.xml dans la sous sections mirrors:
+    <mirror>
+      <id>other-mirror</id>
+      <name>Other Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+
+====================================
+may only work with java jdk 8.0 or earlier
+==================================
+In cases you have multiple version of java:
+
+Apt-get won't overwrite the existing java versions.
+
+To switch between installed java versions, use the update-java-alternatives command.
+
+List all java versions:  
+update-java-alternatives --list
+
+Set java version as default (needs root permissions):
+sudo update-java-alternatives --set /path/to/java/version
+...where /path/to/java/version is one of those listed by the previous command (e.g. /usr/lib/jvm/java-7-openjdk-amd64).
+
+You may need to install the following package: sudo apt-get install icedtea-plugin
+
+also make sure to change the JAVA_HOME accrodingly.
